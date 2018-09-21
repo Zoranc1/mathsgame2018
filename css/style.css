@@ -1,0 +1,91 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:#2657a5 ;
+    
+    font-family: 'Lora', serif;
+}
+h1{
+    color:gold;
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    margin: 1em;
+}
+h2 {
+    text-align: center;
+    color: red;
+    margin-top: 2em;
+    
+}
+h3{
+    text-align: center;
+    color: red;
+    margin-top: 1.8em;
+    margin-bottom: 1.5em;
+    
+}
+
+.background{
+    background-color: lightblue;
+    background-size: cover;
+    background-position: center;
+}
+
+.button{
+    width: 14rem;
+    height: 6rem;
+    border-radius: 10px;
+    color:white;
+    font-size:1.3em;
+    background-color: rgb(64, 137, 232);
+    margin-bottom: 6px;
+    transition-duration: 0.5s;
+    
+    
+}
+.button:hover{
+    
+    transform: scale(1.1, 1.2);
+    background-color: white;
+    color: rgb(64, 137, 232);
+    
+}
+.fas{
+    margin-right: 0.5em;
+    
+}
+.score{
+    color:white;
+    font-size:1.5em; 
+}
+.welcomemessage{
+    text-align: center;
+    margin-bottom: 200px;
+}
+#question{
+    color:#215dbc;
+    font-size:1.5em;
+}
+#message{
+    color: red;
+}
+#myForm{
+    margin-bottom: 200px;
+}
+@media (max-width: 600px){
+    
+    .button{
+        width:100%;
+        height: 40px;
+        font-size:1.2em;
+        
+    }
+    .button:hover{
+        transform:none;
+        
+    }
+    h1{
+        font-size: 3em;
+        margin-bottom: 0.3em;
+    }
+}
