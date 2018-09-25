@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Lora" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-lg-10 offset-1 background">
+                <div class=" text-center">
+                    <h1>The best Math's game</h1>
+                </div>
+
+                <br/>
+                <div class="row text-center">
+                    <div class="col-sm-6">
+                        <button class="button addition" onclick="setAdditionGame()"><i class="fas fa-plus"></i>Addition</button>
+                    </div>
+                    <br/>
+                    <div class="col-sm-6">
+                        <button class="button subtraction" onclick="setSubtractionGame()"><i class="fas fa-minus"></i>Subtraction</button>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <br/>
+                    <div class="col-sm-6 ">
+                        <button class="button Multiplication" onclick="setMultiplicationGame()"><i class="fas fa-times"></i>Multiplication</button>
+                    </div>
+                    <br/>
+                    <div class="col-sm-6 ">
+                        <button class="button Division" onclick="setDivisionGame()"><i class="fas fa-times"></i>Division</button>
+                    </div>
+                </div>
+                
+                <br/>
+                <div id="startmessage">
+                    
+                    
+                    <div class="welcomemessage"><h2>Welcome and let's play!!</h2><h3>First put your name </h3>
+                
+                    <form id="playername" name="playerNameForm" onsubmit="setPlayerName(mathstart); return false;" action="#" data-gametype="addition">
+                
+                                <input type="text" name="playerName">
+                                <input class="player" type="submit" value="Submit">
+                    </form>
+                    </div>
+                </div>
+                <div id="mathstart">
+                    <div class="row ">
+                        <div class="col-12 text-center">
+                            <p class="score"><span id="p_name"></span>, Your score is: <span id="score">0</span></p>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row ">
+                        <div class="col-12 text-center">
+                            <h2 id="message">Welcome, let's play!!</h2>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row ">
+                        <div class="col-12 text-center">
+                            <p id="question"></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-12 text-center">
+                            <form id="myForm" name="answerForm" onsubmit="checkAnswer(); return false;" action="#" data-gametype="addition">
+                
+                                Enter answer: <input type="number" name="answer">
+                                <input type="hidden" name="rightAnswer">
+                                <input class="submitbutton" type="submit" value="submit">
+                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="mathgame.js"></script>
+</body>
+</html>
